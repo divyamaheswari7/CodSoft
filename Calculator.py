@@ -1,3 +1,4 @@
+#import all the functions from the tkinter
 from tkinter import *
 import tkinter.font as font
 root = Tk()
@@ -9,7 +10,7 @@ myFont = font.Font(size=23)
 screen = Entry(root, text=inp, width=31,justify='right', font=(10), bd=4)
 
 screen.grid(row=0, columnspan=4, padx=2,pady=1, ipady=2)
-
+#creating a key matrix
 key_matrix = [["c", u"\u221A", "/", "<-"],
 			["7", "8", "9", "*"],
 			["4", "5", "6", "-"],
@@ -19,7 +20,7 @@ key_matrix = [["c", u"\u221A", "/", "<-"],
 btn_dict = {}
 
 ans_to_print = 0
-
+#calculate function
 def Calculate(event):
 
 	button = event.widget.cget("text")
